@@ -11,3 +11,7 @@
 
 # przyklad uzycia:
 ### wbijasz na live do jakiejs kurwy co streamuje robloxa na tiktoku i prosisz o ocenke stronki, ona wbija i kurwa dostane na pizde rozklekotanymi fotkami i poteznymi czestotliwosciami wiec pozdro !
+
+
+## stronke zajebalem od ptoszek.pl oraz theannoyingsite.com
+### nie badzcie zli pls
