@@ -28,7 +28,7 @@ Wchodzisz **na własne ryzyko**. 😉
 
 Projekt powstał na bazie i z inspiracji:
 
-- [theannoyingsite.com](https://github.com/feross/TheAnnoyingSite) – autor: [feross](https://github.com/feross)
+- [theannoyingsite.com](https://github.com/feross/TheAnnoyingSite.com/) – autor: [feross](https://github.com/feross)
 - [ptoszek.pl](https://github.com/jaczup/ptoszek.pl) – autor: [jaczup](https://github.com/jaczup)
 
 ---
