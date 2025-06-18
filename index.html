@@ -134,19 +134,8 @@
     }
     setInterval(stworzKotek, 500);
   </script>
-  <script>
 
-    console.log('Ładuję index.js');
-
-    const originalInterceptUserInput = interceptUserInput;
-    interceptUserInput = function(onInput) {
-      console.log('Przechwytuję zdarzenia użytkownika');
-      originalInterceptUserInput(event => {
-        console.log('Zdarzenie użytkownika:', event.type, event.target);
-        onInput(event);
-      });
-    };
-  </script>
+  <!-- poprawione ładowanie index.js -->
   <script src='index.js'></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6S5388LRGM"></script>
