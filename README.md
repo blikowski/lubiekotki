@@ -1,5 +1,5 @@
 # lubiekotki.pl
-![lubiekotki.pl](./media/images/icon.jpg)
+![lubiekotki.pl](./media/images/icon.png)
 
 
 **lubiekotki.pl** to remake strony [ptoszek.pl](https://ptoszek.pl), z kilkoma dodatkowymi zmianami oraz usprawnieniami. Strona została stworzona w celach **edukacyjnych** oraz **testowych**.
