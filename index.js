@@ -53,34 +53,31 @@ const SEARCHES = [
 ]
 
 const VIDEOS = [
+  'media/videos/1.mov',
+  'media/videos/2.mov',
+  'media/videos/3.mov',
+  'media/videos/4.mov',
+  'media/videos/5.mov',
+  'media/videos/6.mov',
   'media/videos/1.mp4',
   'media/videos/2.mp4',
   'media/videos/3.mp4',
-  'media/videos/3.mp4',
   'media/videos/4.mp4',
   'media/videos/5.mp4',
-  'media/videos/6.mp4',
-  'media/videos/7.mp4',
-  'media/videos/8.mp4',
-  'media/videos/9.mp4',
-  'media/videos/10.mp4',
-  'media/videos/11.mp4',
-  'media/videos/1.mov'
+  'media/videos/6.mp4'
 ]
 
 const FILE_DOWNLOADS = [
-  'media/images/1.jpg',
-  'media/images/2.jpg',
+  'media/images/1.png',
+  'media/images/2.png',
+  'media/images/3.png',
+  'media/images/4.png',
   'media/images/3.jpg',
   'media/images/4.jpg',
   'media/images/5.jpg',
   'media/images/6.jpg',
-  'media/images/8.jpeg',
-  'media/images/9.jpeg',
-  'media/images/10.jpg',
-  'media/images/11.jpeg',
-  'media/images/12.jpg',
-  'media/images/1.png'
+  'media/images/7.jpg',
+  'media/images/8.jpg'
 ]
 
 const PHRASES = [
