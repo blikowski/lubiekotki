@@ -1,55 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
   <title>Lubie Kotki ! :)</title>
   <meta charset='UTF-8'>
-  <style>
+    <style>
     html, body {
       width: 100%;
       height: 100%;
       margin: 0;
-      font-family: 'Comic Sans MS', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+      font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
         'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial,
         sans-serif;
       overflow: hidden;
-      background-color: #f5e6ff;
     }
     .hello-message {
       margin: 40px;
       text-align: center;
-      z-index: 10;
-      color: #c71585;
     }
     .logout-messages {
       pointer-events: none;
-      color: #c71585;
+      color: red;
       margin: 40px;
       position: fixed;
       top: 0;
       left: 0;
       text-shadow: 2px 2px #FFF, 4px 4px 10px #000;
-      z-index: 10;
     }
     img {
       width: 300px;
-    }
-    #deszcz-kotkow {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      pointer-events: none;
-      z-index: 1;
-    }
-    .kotek {
-      position: absolute;
-      top: -50px;
-      width: 50px;
-      height: 50px;
-      opacity: 0.7;
-      will-change: top, left;
-      animation: spadaj 10s linear infinite, rotacja 5s linear infinite;
     }
     @keyframes blurslowly {
       0% {
@@ -63,24 +41,6 @@
       }
       100% {
         filter: blur(0);
-      }
-    }
-    @keyframes spadaj {
-      0% {
-        top: -50px;
-        left: var(--start-x);
-      }
-      100% {
-        top: 100vh;
-        left: var(--end-x);
-      }
-    }
-    @keyframes rotacja {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
       }
     }
     body {
@@ -111,38 +71,19 @@
     <img src='media/intro.gif' alt='kotek' />
   </div>
   <div class='logout-messages'></div>
+</template>
 
-  <script>
-    function stworzKotek() {
-      console.log('Tworzę kotka');
-      const kotek = document.createElement('img');
-      kotek.src = 'https://media.tenor.com/eOIn1K3X1loAAAAM/plink-cat-luna-cat.gif';
-      kotek.alt = 'Spadający kotek';
-      kotek.className = 'kotek';
-      const startX = Math.random() * 100;
-      const endX = startX + (Math.random() * 200 - 100);
-      kotek.style.setProperty('--start-x', startX + 'vw');
-      kotek.style.setProperty('--end-x', endX + 'vw');
-      kotek.style.animationDelay = Math.random() * 5 + 's';
-      kotek.style.animationDuration = (8 + Math.random() * 4) + 's';
-      document.getElementById('deszcz-kotkow').appendChild(kotek);
-      console.log('Dodano kotka, pozycja startowa:', startX, 'vw');
-      setTimeout(() => {
-        console.log('Usuwam kotka');
-        kotek.remove();
-      }, 12000);
-    }
-    setInterval(stworzKotek, 500);
-  </script>
+<script src='index.js'></script>
 
-  <script src='index.js'></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6S5388LRGM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6S5388LRGM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-6S5388LRGM');
-  </script>
+  gtag('config', 'G-6S5388LRGM');
+</script>
+
 </body>
 </html>
