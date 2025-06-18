@@ -58,17 +58,17 @@ const VIDEOS = [
 ]
 
 const FILE_DOWNLOADS = [
-  'media/images/1.jpg',
   'media/images/3.jpg',
   'media/images/4.jpg',
   'media/images/5.jpg',
   'media/images/6.jpg',
   'media/images/7.jpg',
   'media/images/8.jpg',
+  'media/images/1.png',
   'media/images/2.png',
   'media/images/3.png',
   'media/images/4.png',
-  'media/images/5i.png'
+  'media/images/5.png'
 ]
 
 const PHRASES = [
