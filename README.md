@@ -1,6 +1,6 @@
 # lubiekotki.pl - trolluj cwelow ktorzy nie umieja korzystac z neta
 
-![lubiekotki.pl](./media/icon.jpg)
+![lubiekotki.pl](./media/images/icon.jpg)
 
 ### czy zastanawiales sie kiedys czy twoj ziomek czy nawet nauczyciel jest tak tepy ze wbije na stronke ktora mu podales???
 ## TERAZ MOZESZ TO OFICJALNIE PRZETESTOWAC KURWA !
