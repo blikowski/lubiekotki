@@ -1,17 +1,36 @@
-# lubiekotki.pl - trolluj cwelow ktorzy nie umieja korzystac z neta
-
+# lubiekotki.pl
 ![lubiekotki.pl](./media/images/icon.jpg)
 
-### czy zastanawiales sie kiedys czy twoj ziomek czy nawet nauczyciel jest tak tepy ze wbije na stronke ktora mu podales???
-## TERAZ MOZESZ TO OFICJALNIE PRZETESTOWAC KURWA !
 
+**lubiekotki.pl** to remake strony [ptoszek.pl](https://ptoszek.pl), z kilkoma dodatkowymi zmianami oraz usprawnieniami. Strona została stworzona w celach **edukacyjnych** oraz **testowych**.
 
-# no ale ok, co to za stronka i co robi?
-## ogolnie ta stronka nie jest wirusem itd tylko wyswietla to - co umie przegladarka na maxa cn, wyskakuja obrazki jakies inne gowno wieeec no tak to wyglada. poprostu stronka ma nauczyc ze nie kazdy link jest safe.
+## O co chodzi?
 
-# przyklad uzycia:
-### wbijasz na live do jakiejs kurwy co streamuje robloxa na tiktoku i prosisz o ocenke stronki, ona wbija i kurwa dostane na pizde rozklekotanymi fotkami i poteznymi czestotliwosciami wiec pozdro !
+Celem projektu jest sprawdzenie zachowania przeglądarek internetowych w nietypowych i skrajnych warunkach. Strona ma za zadanie **przetestować wydajność**, **stabilność** i **odporność** przeglądarki na różne manipulacje interfejsem.
 
+Dodatkowym zamierzeniem jest **uświadomienie użytkowników**, jak niebezpieczne mogą być nieznane linki – nawet te wyglądające niewinnie jak "lubiekotki.pl".
 
-## stronke zajebalem od ptoszek.pl oraz theannoyingsite.com
-### nie badzcie zli pls
+## Co zostało zmienione?
+
+- Zmieniony interfejs graficzny (dostosowany styl, kolorystyka itp.)
+- Dodane nowe elementy zaburzające komfort użytkowania
+
+## Uwaga
+
+Strona **nie zawiera żadnego złośliwego oprogramowania**, jednak może spowodować:
+- zacięcia przeglądarki
+- otwarcie wielu nowych okien
+- niespodziewane dźwięki lub animacje
+
+Wchodzisz **na własne ryzyko**. 😉
+
+## Inspiracje
+
+Projekt powstał na bazie i z inspiracji:
+
+- [theannoyingsite.com](https://github.com/feross/TheAnnoyingSite) – autor: [feross](https://github.com/feross)
+- [ptoszek.pl](https://github.com/jaczup/ptoszek.pl) – autor: [jaczup](https://github.com/jaczup)
+
+---
+
+**Disclaimer:** Wszystko zostało zrobione w celach edukacyjnych – NIE zachęcam do wykorzystywania tego typu technik do złośliwych działań.
