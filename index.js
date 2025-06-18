@@ -310,7 +310,7 @@ function isParentSameOrigin () {
  */
 function confirmPageUnload () {
   window.addEventListener('beforeunload', event => {
-    speak('Please don\'t go!')
+    speak('nie uciekaj!!')
     event.returnValue = true
   })
 }
