@@ -1,4 +1,4 @@
-# lubiekotki.pl
+# lubiekotki.pl 😼
 ![lubiekotki.pl](./media/images/icon.png)
 
 
