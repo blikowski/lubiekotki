@@ -4,7 +4,7 @@
 
 **lubiekotki.pl** to remake strony [ptoszek.pl](https://ptoszek.pl), z kilkoma dodatkowymi zmianami oraz usprawnieniami. Strona została stworzona w celach **edukacyjnych** oraz **testowych**.
 
-[![Serwer Discord](.media/images/discord.png)](https://discord.gg/pochwa)
+[![Serwer Discord](https://github.com/blikowski/lubiekotki/blob/main/media/images/discord.png?raw=true)](https://discord.gg/pochwa)
 
 ## O co chodzi?
 
