@@ -4,6 +4,8 @@
 
 **lubiekotki.pl** to remake strony [ptoszek.pl](https://ptoszek.pl), z kilkoma dodatkowymi zmianami oraz usprawnieniami. Strona została stworzona w celach **edukacyjnych** oraz **testowych**.
 
+[![Serwer Discord](.media/images/discord.png)](https://discord.gg/pochwa)
+
 ## O co chodzi?
 
 Celem projektu jest sprawdzenie zachowania przeglądarek internetowych w nietypowych i skrajnych warunkach. Strona ma za zadanie **przetestować wydajność**, **stabilność** i **odporność** przeglądarki na różne manipulacje interfejsem.
