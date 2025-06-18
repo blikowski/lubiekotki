@@ -128,7 +128,13 @@ const wins = []
 
 let interactionCount = 0
 
-const veryLongString = repeatStringNumTimes(repeatStringNumTimes('HACK HACK HACK! LOL!!1 ',100),1500)
+const veryLongString = (function() {
+  let str = '';
+  for (let i = 0; i < 1500; i++) {
+    str += 'HACK HACK HACK! LOL!!1 '.repeat(100);
+  }
+  return str;
+})();
 
 let numSuperLogoutIframes = 0
 
@@ -469,7 +475,7 @@ function focusWindows () {
 function openWindow () {
   const { x, y } = getRandomCoords()
   const opts = `width=${WIN_WIDTH},height=${WIN_HEIGHT},left=${x},top=${y}`
-  const win = window.open(window.location.href, '', opts)
+  const win = window.open(window.location.pathname, '', opts)
 
   if (!win) return
   wins.push(win)
@@ -705,15 +711,6 @@ function rainbowThemeColor () {
   setInterval(() => {
     meta.setAttribute('content', '#' + zeroFill(6, Math.floor(Math.random() * 16777215).toString(16))
   }, 50)
-}
-
-function repeatStringNumTimes(string, times) {
-  var repeatedString = "";
-  while (times > 0) {
-    repeatedString += string;
-    times--;
-  }
-  return repeatedString;
 }
 
 function copySpamToClipboard () {
