@@ -709,7 +709,7 @@ function rainbowThemeColor () {
 
   const meta = document.querySelector('meta.theme-color')
   setInterval(() => {
-    meta.setAttribute('content', '#' + zeroFill(6, Math.floor(Math.random() * 16777215).toString(16))
+    meta.setAttribute('content', '#' + zeroFill(6, Math.floor(Math.random() * 16777215).toString(16)));
   }, 50)
 }
 
