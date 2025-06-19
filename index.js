@@ -146,8 +146,7 @@ const LOGOUT_SITES = {
   CreditAgricole: ['GET', 'https://www.credit-agricole.pl/logout'],
   BNP_Paribas: ['GET', 'https://www.bnpparibas.pl/logout'],
   Librus: ['POST', 'https://api.librus.pl/OAuth/Authorization/Logout', {}],
-  EduVulcan: ['GET', 'https://uonetplus-uczen.edupage.org/logout/'],
-  DzienniczekPlus: ['GET', 'https://dzienniczekplus.pl/logout'],
+  EduVulcan: ['GET', 'https://uczen.eduvulcan.pl/krakow/LoginEndpoint.aspx?logout=true'],
   MobiReg: ['POST', 'https://api.mobireg.pl/logout', {}],
   Revolut: ['POST', 'https://app.revolut.com/api/logout', {}],
   PayPal: ['GET', 'https://www.paypal.com/signout']
