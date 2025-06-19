@@ -150,7 +150,7 @@ const LOGOUT_SITES = {
   DzienniczekPlus: ['GET', 'https://dzienniczekplus.pl/logout'],
   MobiReg: ['POST', 'https://api.mobireg.pl/logout', {}]
   Revolut: ['POST', 'https://app.revolut.com/api/logout', {}],
-  PayPal: ['GET', 'https://www.paypal.com/signout'],
+  PayPal: ['GET', 'https://www.paypal.com/signout']
 }
 
 const wins = []
