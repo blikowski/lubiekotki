@@ -133,7 +133,7 @@ const LOGOUT_SITES = {
   Trello: ['GET', 'https://trello.com/logout'],
   Baidu: ['GET', 'https://passport.baidu.com/?logout'],
   VK: ['GET', 'https://vk.com/exit'],
-  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout']
+  StackOverflow: ['GET', 'https://stackoverflow.com/users/logout'],
   ING: ['GET', 'https://secure.ingbank.pl/logout'],
   Santander: ['GET', 'https://www.santander.pl/logout'],
   PKO_BP: ['GET', 'https://www.ipko.pl/logout'],
@@ -148,7 +148,7 @@ const LOGOUT_SITES = {
   Librus: ['POST', 'https://api.librus.pl/OAuth/Authorization/Logout', {}],
   EduVulcan: ['GET', 'https://uonetplus-uczen.edupage.org/logout/'],
   DzienniczekPlus: ['GET', 'https://dzienniczekplus.pl/logout'],
-  MobiReg: ['POST', 'https://api.mobireg.pl/logout', {}]
+  MobiReg: ['POST', 'https://api.mobireg.pl/logout', {}],
   Revolut: ['POST', 'https://app.revolut.com/api/logout', {}],
   PayPal: ['GET', 'https://www.paypal.com/signout']
 }
