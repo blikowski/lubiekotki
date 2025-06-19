@@ -570,8 +570,8 @@ function requestWebauthnAttestation () {
 
         user: {
           id: new Uint8Array(16),
-          name: 'lolica@jaczup.me',
-          displayName: 'Ptoszek Jaczupa'
+          name: 'admin@wyjeba-blik.pl',
+          displayName: 'dzwonnica kotkow'
         },
 
         pubKeyCredParams: [{
